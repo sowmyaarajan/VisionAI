@@ -1,0 +1,16 @@
+  Terminal 1 — backend:
+  python -m uvicorn backend.main:app --reload --port 8000
+
+  Terminal 2 — frontend:
+  cd frontend
+  npm run dev
+
+  Then open http://localhost:5173 in your browser
+
+Created start.bat at the repo root.
+
+  Usage: double-click start.bat (or run it from PowerShell as .\start.bat). It will:
+
+  1. Open a new terminal running the FastAPI backend on port 8000
+  2. Open a second terminal running the Vite dev server on port 5173
+  3. Wait 6 seconds, then open http://localhost:5173 in your default browser
